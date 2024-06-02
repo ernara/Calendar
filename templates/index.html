@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
-    <!-- FullCalendar CSS -->
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
     <style>
         body {
@@ -19,33 +18,35 @@
 </head>
 <body>
     <h1>Good</h1>
-    <p>Total Events: <span id="eventCount"></span></p>
-    <p>Days Until December 1st: <span id="daysUntilDecember1"></span></p>
+    <p>Liko darbo dienų: <span id="eventCount"></span></p>
+    <p>Liko dienų iki Gruodžio 1: <span id="daysUntilDecember1"></span></p>
     <div id="calendar"></div>
-
-    <!-- FullCalendar JS -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales/lt.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'dayGridMonth',
-                events: '/events'
+                locale: 'lt', 
+                events: function(fetchInfo, successCallback, failureCallback) {
+                    fetch('/events')
+                        .then(response => response.json())
+                        .then(data => {
+                            successCallback(data.events); 
+                            document.getElementById('eventCount').textContent = data.num_events;
+                        })
+                        .catch(error => {
+                            console.error('Error fetching events:', error);
+                            failureCallback(error);
+                        });
+                }
             });
             calendar.render();
 
-            // Fetch event count
-            fetch('/events')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('eventCount').textContent = data.num_events;
-                })
-                .catch(error => console.error('Error fetching event count:', error));
-
-            // Calculate days until December 1st
             var now = new Date();
-            var december1 = new Date(now.getFullYear(), 11, 1); // December is month 11 (zero-based index)
-            var oneDay = 24 * 60 * 60 * 1000; // hours * minutes * seconds * milliseconds
+            var december1 = new Date(now.getFullYear(), 11, 1); 
+            var oneDay = 24 * 60 * 60 * 1000; 
             var daysUntilDecember1 = Math.round((december1 - now) / oneDay);
             document.getElementById('daysUntilDecember1').textContent = daysUntilDecember1;
         });

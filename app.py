@@ -12,11 +12,11 @@ def events():
     with open('events.json', 'r', encoding='utf-8') as f:
         events_data = json.load(f)
     
-    num_events = len(events_data)  # Get the number of events
+    num_events = len(events_data)  
     
     response = {
         'num_events': num_events,
-        'events_data': events_data
+        'events': events_data 
     }
     
     return jsonify(response)
