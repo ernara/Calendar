@@ -18,9 +18,11 @@
 </head>
 <body>
     <h1>Good</h1>
-    <p>Liko darbo dienų: <span id="eventCount"></span></p>
-    <p>Liko dienų iki Gruodžio 1: <span id="daysUntilDecember1"></span></p>
+    <p>Liko dienų: <span id="daysUntilDecember1"></span></p>
+    <p>Liko darbo dienų: <span id="workingDaysCount">{{ num_working_days }}</span></p>
+
     <div id="calendar"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales/lt.js"></script>
     <script>

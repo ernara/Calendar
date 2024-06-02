@@ -1,8 +1,55 @@
 [
+    {"title": "Naujųjų Metų Diena", "start": "2024-01-01", "rendering": "background", "color": "red"},
+    {"title": "Valstybės Atkūrimo Diena", "start": "2024-02-16", "rendering": "background", "color": "red"},
+    {"title": "Nepriklausomybės Atkūrimo Diena", "start": "2024-03-11", "rendering": "background", "color": "red"},
+    {"title": "Velykų Sekmadienis", "start": "2024-03-31", "rendering": "background", "color": "red"},
+    {"title": "Velykų Pirmadienis", "start": "2024-04-01", "rendering": "background", "color": "red"},
+    {"title": "Tarptautinė Darbo Diena", "start": "2024-05-01", "rendering": "background", "color": "red"},
+    {"title": "Joninės", "start": "2024-06-24", "rendering": "background", "color": "red"},
+    {"title": "Valstybės Diena", "start": "2024-07-06", "rendering": "background", "color": "red"},
+    {"title": "Žolinės", "start": "2024-08-15", "rendering": "background", "color": "red"},
+    {"title": "Visų Šventųjų Diena", "start": "2024-11-01", "rendering": "background", "color": "red"},
+    {"title": "Kūčios", "start": "2024-12-24", "rendering": "background", "color": "red"},
+    {"title": "Kalėdos", "start": "2024-12-25", "rendering": "background", "color": "red"},
+    {"title": "Antroji Kalėdų Diena", "start": "2024-12-26", "rendering": "background", "color": "red"},
+
+
+    {
+        "title": "Vakarinė 1 diena",
+        "start": "2024-04-04"
+    },
+    {
+        "title": "Vakarinė 1 diena",
+        "start": "2024-04-04"
+    },{
+        "title": "Vakarinė 1 diena",
+        "start": "2024-04-04"
+    },{
+        "title": "Vakarinė 1 diena",
+        "start": "2024-04-04"
+    },{
+        "title": "Vakarinė 1 diena",
+        "start": "2024-04-04"
+    },{
+        "title": "Vakarinė 1 diena",
+        "start": "2024-04-04"
+    },{
+        "title": "Vakarinė 1 diena",
+        "start": "2024-04-04"
+    },{
+        "title": "Vakarinė 1 diena",
+        "start": "2024-04-04"
+    },{
+        "title": "Vakarinė 1 diena",
+        "start": "2024-04-04"
+    },
+
+
     {
         "title": "Vakarinė 1 diena",
         "start": "2024-06-04"
     },
+    
     {
         "title": "Vakarinė 2 diena",
         "start": "2024-06-05"
@@ -374,3 +421,4 @@
             "start": "2024-11-28"
         }
 ]
+
