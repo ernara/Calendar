@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazeris.lt</title>
+    <!-- Specify favicon -->
+    <link rel="icon" href="fazer_logo.webp" type="image/webp">
+    <!-- Other CSS and JavaScript imports remain unchanged -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+    <style>
+        #calendar {
+            max-width: 800px;
+            min-height: 480px;
+            margin: 40px auto;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales/lt.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Your existing content -->
+    <a href="index.html" class="logo-link">
+        <img src="fazer_logo.webp" alt="Fazero Logo" width="50" height="50">
+    </a>
+
+    <div class="countdown-container">
+        <a href="#" id="toggleLink" class="toggle-link" onclick="toggleCountdown(event)"></a>
+        <div id="countdownContent" class="countdown-content">
+            <p>Liko Dienų Iki Rugsėjo: <span id="daysUntilSeptember"></span></p>
+            <p>Liko Darbo dienų Iki Rugsėjo: <span id="workDaysUntilSeptember"></span></p>
+            <p>Liko Dienų iki Gruodžio: <span id="daysUntilDecember"></span></p>
+            <p>Liko Darbo dienų iki Gruodžio: <span id="workDaysUntilDecember"></span></p>
+        </div>
+    </div>
+
+    <div id="calendar"></div>
+
+    <div>
+        R.I.P Fazer :/
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@5.10.1/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@5.10.1/main.min.js"></script>
+    <script src="calendar.js"></script>
+
+</body>
+</html>

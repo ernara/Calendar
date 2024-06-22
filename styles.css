@@ -1,0 +1,65 @@
+/* Apply styles only to the countdown container */
+.countdown-container {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
+
+.countdown-container p {
+    margin: 10px 0;
+}
+
+.countdown-container span {
+    font-weight: bold;
+    color: #007bff; /* blue color */
+}
+
+.fc-button {
+    padding: 2px !important; /* Reduce padding to make the button smaller */
+    font-size: 10px !important; /* Decrease font size of the button text */
+}
+
+.fc-today-button {
+    display: none !important;
+}
+
+.countdown-container .toggle-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.countdown-container .toggle-link {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.countdown-container .toggle-link:hover {
+    background-color: #0056b3;
+}
+
+
+.countdown-container.show .countdown-content {
+    display: block; /* Show the countdown content */
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    font-family: 'Indie Flower', cursive !important
+}
