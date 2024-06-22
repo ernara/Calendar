@@ -1,9 +1,6 @@
 var events = [];
-//var daysUntilSeptember = 0;
-//var daysUntilDecember = 0;
-
 function toggleCountdown(event) {
-    event.preventDefault(); // Prevent default link behavior (if used as a link)
+    event.preventDefault(); 
 
     var countdownContent = document.getElementById('countdownContent');
     var countdownContainer = document.querySelector('.countdown-container');
